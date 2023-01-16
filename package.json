@@ -8,11 +8,8 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist --public-url /https://github.com/stekatag/forkify/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
-  "homepage": "https://github.com/stekatag/forkify",
   "author": "Stefan Gogov",
   "license": "ISC",
   "dependencies": {
@@ -22,7 +19,6 @@
     "regenerator-runtime": "^0.13.11"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.2",
-    "gh-pages": "^4.0.0"
+    "@parcel/transformer-sass": "^2.8.2"
   }
 }
