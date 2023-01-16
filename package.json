@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "predeploy": "rm -rf dist && parcel build index.html --no-source-maps --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Stefan Gogov",
   "license": "ISC",
