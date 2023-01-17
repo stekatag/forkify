@@ -1,12 +1,5 @@
-<!-- PROJECT SHIELDS -->
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![pull][pull-requests-shield]][pull-requests-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
 <!-- PROJECT LOGO -->
+
 <br />
 <p align="center">
   <a href="https://forkify-stekatag.netlify.app/">
@@ -62,8 +55,10 @@
 
 A project from _The Complete JavaScript Course 2022: From Zero to Expert!_ Created by Jonas Schmedtmann. Check out the course [here](https://www.udemy.com/course/the-complete-javascript-course/).
 
-Forkify is a vanilla JavaScript application that interacts with the Forkify API to fetch and display recipe food data. This app uses modern JavaScript tools, such as Parcel to bundle the modules, and Babel to convert ES6+ features back to ES5. The user can search for a specific recipe and save it to a favorites list via local storage. The user can easily increase or decrease
-servings as per his need and can view detailed directions.
+Forkify is a vanilla JavaScript application that interacts with the Forkify API to fetch and display recipe food data. This app uses modern JavaScript tools, such as Parcel to bundle the modules, and Babel to convert ES6+ features back to ES5.
+
+- The user can search for a specific recipe and save it to a favorites list via local storage.
+- The user can easily increase or decrease servings as per his need and can view detailed directions.
 
 ### Built With
 
@@ -163,7 +158,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MIT License. See [license](./LICENSE.txt) for more information.
+Distributed under the MIT License. See [license]([license-url]) for more information.
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -176,14 +171,5 @@ Distributed under the MIT License. See [license](./LICENSE.txt) for more informa
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/stekatag/forkify?color=green&style=for-the-badge
-[contributors-url]: https://github.com/stekatag/forkify/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/stekatag/forkify?style=for-the-badge
-[forks-url]: https://github.com/stekatag/forkify/network/members
-[pull-requests-shield]: https://img.shields.io/github/issues-pr/stekatag/forkify?style=for-the-badge
-[pull-requests-url]: https://github.com/stekatag/forkify/pulls
-[issues-shield]: https://img.shields.io/bitbucket/issues/stekatag/forkify?style=for-the-badge
-[issues-url]: https://github.com/stekatag/forkify/issues
-[license-shield]: https://img.shields.io/apm/l/vim-mode?label=LICENSE&style=for-the-badge
 [license-url]: https://github.com/stekatag/forkify/LICENSE.txt
 [product-screenshot]: ./src/img/screenshot.png
