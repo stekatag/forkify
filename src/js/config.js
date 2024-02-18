@@ -1,5 +1,10 @@
-export const API_URL = "https://forkify-api.herokuapp.com/api/v2/recipes/";
+export const API_URL = `https://forkify-api.herokuapp.com/api/v2/recipes/`;
 export const TIMEOUT_SEC = 10;
 export const RES_PER_PAGE = 10;
 export const KEY = "bdb5393b-7e54-4c24-bade-41baec3a3a8e";
 export const MODAL_CLOSE_SEC = 2.5;
+export const SERVINGS_TO_UPLOAD = 4;
+export const SPOONACULAR_ENDPOINT = `https://api.spoonacular.com/recipes/parseIngredients`;
+export const SPOONACULAR_API_KEY = "1fed54ff99014540acce11d0955733fb";
+export const MS_PER_DAY = 1000 * 60 * 60 * 24;
+export const FIRST_MONDAY = new Date(0).getTime() + 4 * MS_PER_DAY;
