@@ -13,12 +13,12 @@
   "author": "Stefan Gogov",
   "license": "ISC",
   "dependencies": {
-    "core-js": "^3.27.1",
+    "core-js": "^3.36.0",
     "fractional": "^1.0.0",
-    "parcel": "^2.10.3",
+    "parcel": "^2.11.0",
     "regenerator-runtime": "^0.13.11"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.10.3"
+    "@parcel/transformer-sass": "^2.11.0"
   }
 }
