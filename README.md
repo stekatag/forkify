@@ -9,7 +9,7 @@
   <h3 align="center">Forkify</h3>
 
   <p align="center">
-    A recipe search application made with javascript.
+    A recipe search application made with Vanilla JS.
     <br />
     <a href="#about-the-project"><strong>Explore the docs »</strong></a>
     <br />
@@ -53,12 +53,17 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://forkify-stekatag.netlify.app/)
 
-A project from _The Complete JavaScript Course 2022: From Zero to Expert!_ Created by Jonas Schmedtmann. Check out the course [here](https://www.udemy.com/course/the-complete-javascript-course/).
-
 Forkify is a vanilla JavaScript application that interacts with the Forkify API to fetch and display recipe food data. This app uses modern JavaScript tools, such as Parcel to bundle the modules, and Babel to convert ES6+ features back to ES5.
 
-- The user can search for a specific recipe and save it to a favorites list via local storage.
-- The user can easily increase or decrease servings as per his need and can view detailed directions.
+### Features
+
+- Search and save recipes
+- Adjust serving sizes
+- View nutritional info
+- Access original recipe website
+- Bookmark favorite recipes
+- Create shopping list
+- Make weekly meal plan
 
 ### Built With
 
@@ -115,6 +120,10 @@ Start with the latest version of NPM to avoid any errors:
 3. Bookmarked recipes are stored in local storage so no database was
    required for this application.
 
+4. Create a shopping list of all the ingredients you need for your recipes to make grocery shopping easier and more efficient.
+
+5. Plan your meals for the week by selecting recipes and adding them to your weekly meal plan, helping you stay organized and save time.
+
 _For more examples, please refer to the [Documentation](https://forkify-api.herokuapp.com/v2)_
 
 <!-- ROADMAP -->
@@ -125,22 +134,19 @@ See the [open issues](https://github.com/stekatag/forkify/issues) for a list of 
 
 ### Proposed features
 
-1. Number of pages between the pagination buttons.
+1. Number of pages between the pagination buttons. ✅
 
-2. Ability to sort search results by duration or number of ingredients.
+2. Shopping list feature: button on recipe to add ingredients to a list. ✅
 
-3. Ingredient validation in view, before submitting the form.
+3. Weekly meal planning feature: assign recipes to the next 7 days and show
+   on a weekly calendar. ✅
 
-4. Improving recipe ingredient input: separate in multiple fields and allow more
-   than 6 ingredients.
+4. Nutrition data on each ingredient from spoonacular API (https://
+   spoonacular.com/food-api) and calculate total calories of recipe. ✅
 
-5. Shopping list feature: button on recipe to add ingredients to a list.
+5. Dark mode. ✅
 
-6. Weekly meal planning feature: assign recipes to the next 7 days and show
-   on a weekly calendar.
-
-7. Nutrition data on each ingredient from spoonacular API (https://
-   spoonacular.com/food-api) and calculate total calories of recipe.
+6. Responsive design. ✅
 
 <!-- CONTRIBUTING -->
 
