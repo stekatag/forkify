@@ -53,22 +53,28 @@ const controlRecipes = async function () {
 };
 
 const controlSearchResults = async function () {
-  try {
-    resultsView.renderSpinner();
-    //1) Get search query
-    const query = searchView.getQuery();
-    if (!query) return;
+  // 1) Get search query and trim it to remove whitespace
+  const query = searchView.getQuery().trim();
 
-    //2) Load search results
+  // 2) Check if the query is empty after trimming
+  if (!query) return;
+
+  try {
+    // Render the spinner only after validating the query is not empty
+    resultsView.renderSpinner();
+
+    // 3) Proceed with loading search results if query is valid
     await model.loadSearchResults(query);
 
-    //3) Render results
+    // 4) Render results
     resultsView.render(model.getSearchResultsPage());
 
-    //4) Render pagination buttons
+    // 5) Render pagination buttons
     paginationView.render(model.state.search);
   } catch (err) {
     console.error(err);
+    // Provide feedback to the user upon error
+    resultsView.renderError("Failed to load search results. Please try again.");
   }
 };
 
