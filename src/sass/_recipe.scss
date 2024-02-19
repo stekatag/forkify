@@ -185,7 +185,7 @@
   // INGREDIENTS
   &__ingredients {
     padding: 5rem 8rem;
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     line-height: 1.4;
     background-color: var(--color-grey--2);
     display: flex;
@@ -229,7 +229,7 @@
     flex: 0 0 auto;
   }
   &__note {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     align-self: flex-end;
     margin-top: 3rem;
     margin-bottom: -3rem;
@@ -291,6 +291,12 @@
     @include respond(tab-port) {
       grid-template-columns: 1fr;
     }
+
+    & > *:nth-child(even) {
+      @include respond(tab-port) {
+        margin-bottom: 1.8rem;
+      }
+    }
   }
 
   &__label {
@@ -301,10 +307,11 @@
       grid-row: initial;
     }
   }
+
   &__select {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     grid-row: 2;
-    padding: 0.8rem 0.5rem;
+    padding: 1rem 0.8rem;
     max-width: 20rem;
     border: 1px solid var(--color-input-borders);
     border-radius: 0.5rem;
@@ -324,11 +331,13 @@
       background-color: var(--color-grey--1);
     }
   }
+
   &__option {
     font-family: inherit;
     font-size: 1.6rem;
     text-transform: capitalize;
   }
+
   &__submit {
     padding: 1.25rem 2.25rem;
     font-size: 1.4rem;
@@ -338,6 +347,7 @@
     place-self: center;
 
     @include respond(tab-port) {
+      margin-top: 0.5rem;
       grid-row: initial;
       grid-column: 1;
     }

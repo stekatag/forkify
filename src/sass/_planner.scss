@@ -19,7 +19,9 @@
   }
 
   @include respond(phone-small) {
-    grid-template-columns: 15rem 1fr;
+    padding: 0 5rem 0 3rem;
+    grid-template-columns: 5fr 10fr;
+    column-gap: 1.5rem;
     grid-template-rows: repeat(4, 10rem);
   }
 
@@ -39,8 +41,8 @@
     transition: all 0.2s;
 
     @include respond(phone) {
-      margin-top: 0;
-      margin-bottom: 2rem;
+      margin-top: 1.6rem;
+      margin-bottom: 3.2rem;
     }
 
     &:hover {

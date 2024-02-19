@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Codystar&family=Metal&display=swap");
 :root {
   --color-primary: #f38e82;
   --color-grad-1: #fbdb89;
@@ -117,12 +117,12 @@ body {
       border-radius: 0; } }
   @media only screen and (max-width: 41.25em) {
     .container-pages {
-      grid-template-rows: 10rem minmax(130rem, auto); }
+      grid-template-rows: 10rem minmax(0, auto); }
       .container-pages__planner {
         grid-template-rows: 10rem auto; } }
 
 .section {
-  padding: 5rem 8rem 0rem 8rem;
+  padding: 5rem 8rem 0;
   margin-bottom: 6rem; }
   .section__title {
     margin-bottom: 2rem; }
@@ -142,7 +142,11 @@ body {
         width: 0%; } }
   @media only screen and (max-width: 41.25em) {
     .section__shopping-list {
+      padding-inline: 4.8rem;
       margin-top: 3rem; } }
+  @media only screen and (max-width: 28.12em) {
+    .section__shopping-list {
+      padding-inline: 3.2rem; } }
   .section__list {
     display: grid;
     justify-items: center; }
@@ -338,7 +342,7 @@ body {
     outline: none; }
 
 .heading--2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: var(--color-primary);
   text-transform: uppercase;
@@ -346,7 +350,7 @@ body {
   text-align: center; }
 
 .heading--3 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--color-text--1);
   text-transform: uppercase;
@@ -409,7 +413,7 @@ body {
   .header__logo {
     margin-left: 2.5rem;
     display: flex;
-    align-items: center;
+    gap: 0.5rem;
     text-decoration: none;
     color: unset; }
     @media only screen and (max-width: 56.25em) {
@@ -427,7 +431,7 @@ body {
       .header__logo-img--home {
         margin-right: 0; } }
   .header__logo-name {
-    font-family: "Akaya Kanadaka", serif;
+    font-family: "Metal", serif;
     font-size: 3.4rem;
     transform: translateY(-3px); }
     @media only screen and (max-width: 75em) {
@@ -634,7 +638,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2000;
-    transition: all 0.4s;
+    transition: all 0.25s;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     cursor: pointer; }
   .navigation__background {
@@ -647,7 +651,7 @@ body {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
-    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.35s cubic-bezier(0.86, 0, 0.07, 1);
     z-index: 1000; }
   .navigation__nav {
     height: 100vh;
@@ -658,7 +662,7 @@ body {
     visibility: hidden;
     opacity: 0;
     width: 0;
-    transition: all 0.8s cubic-bezier(0.48, -0.36, 0.42, 1.39); }
+    transition: all 0.35s cubic-bezier(0.48, -0.36, 0.42, 1.39); }
   .navigation__list {
     list-style: none;
     text-align: center;
@@ -677,7 +681,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     padding: 1.3rem 5rem;
-    transition: all 0.6s;
+    transition: all 0.35s;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-grey--3) 50%);
     background-size: 220%;
     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); }
@@ -1009,7 +1013,7 @@ body {
     font-weight: 600; }
   .recipe__ingredients {
     padding: 5rem 8rem;
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     line-height: 1.4;
     background-color: var(--color-grey--2);
     display: flex;
@@ -1041,7 +1045,7 @@ body {
     margin-right: 0.5rem;
     flex: 0 0 auto; }
   .recipe__note {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     align-self: flex-end;
     margin-top: 3rem;
     margin-bottom: -3rem; }
@@ -1085,6 +1089,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .recipe__planning-form {
         grid-template-columns: 1fr; } }
+    @media only screen and (max-width: 56.25em) {
+      .recipe__planning-form > *:nth-child(even) {
+        margin-bottom: 1.8rem; } }
   .recipe__label {
     grid-row: 1;
     font-weight: 600; }
@@ -1092,9 +1099,9 @@ body {
       .recipe__label {
         grid-row: initial; } }
   .recipe__select {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     grid-row: 2;
-    padding: 0.8rem 0.5rem;
+    padding: 1rem 0.8rem;
     max-width: 20rem;
     border: 1px solid var(--color-input-borders);
     border-radius: 0.5rem;
@@ -1123,6 +1130,7 @@ body {
     place-self: center; }
     @media only screen and (max-width: 56.25em) {
       .recipe__submit {
+        margin-top: 0.5rem;
         grid-row: initial;
         grid-column: 1; } }
 
@@ -1281,15 +1289,14 @@ body {
   height: fit-content; }
   @media only screen and (max-width: 56.25em) {
     .list {
-      width: 55%; } }
+      width: 85%; } }
   @media only screen and (max-width: 41.25em) {
     .list {
       margin: 3rem;
-      width: 85%; } }
+      width: 100%; } }
   @media only screen and (max-width: 28.12em) {
     .list {
-      margin: 0;
-      width: 100%; } }
+      margin: 0; } }
   .list__list-container {
     position: relative; }
   .list__list-img {
@@ -1406,6 +1413,14 @@ body {
 .u-margin-left-right {
   margin-left: 3.2rem;
   margin-right: 3.2rem; }
+  @media only screen and (max-width: 41.25em) {
+    .u-margin-left-right {
+      margin-left: 4rem;
+      margin-right: 4rem; } }
+  @media only screen and (max-width: 28.12em) {
+    .u-margin-left-right {
+      margin-left: 2.4rem;
+      margin-right: 2.4rem; } }
 
 .planner {
   display: grid;
@@ -1426,7 +1441,9 @@ body {
       grid-template-rows: repeat(4, 10rem); } }
   @media only screen and (max-width: 28.12em) {
     .planner {
-      grid-template-columns: 15rem 1fr;
+      padding: 0 5rem 0 3rem;
+      grid-template-columns: 5fr 10fr;
+      column-gap: 1.5rem;
       grid-template-rows: repeat(4, 10rem); } }
   .planner__date {
     align-self: flex-start; }
@@ -1442,8 +1459,8 @@ body {
     transition: all 0.2s; }
     @media only screen and (max-width: 41.25em) {
       .planner__date-label {
-        margin-top: 0;
-        margin-bottom: 2rem; } }
+        margin-top: 1.6rem;
+        margin-bottom: 3.2rem; } }
     .planner__date-label:hover {
       padding-left: 3rem; }
   .planner__date-text {
@@ -1639,10 +1656,14 @@ body {
 .features {
   display: flex;
   flex-flow: row wrap;
-  gap: 4rem;
+  justify-content: space-between;
+  gap: 3.2rem;
   place-content: center;
   padding: 0 3.2rem;
   margin-top: -1.5rem; }
+  @media only screen and (max-width: 28.12em) {
+    .features {
+      padding: 0 2.4rem; } }
   .features__feature-box {
     max-width: 28.5rem;
     background-color: var(--color-background);
@@ -1651,6 +1672,9 @@ body {
     margin-top: 2.5rem;
     padding: 2.8rem 3.2rem;
     transition: all 0.2s; }
+    @media only screen and (max-width: 41.25em) {
+      .features__feature-box {
+        max-width: 35rem; } }
     .features__feature-box:hover {
       transform: scale(1.03); }
   .features__icon svg {
@@ -1661,3 +1685,6 @@ body {
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--color-text--2); }
+    @media only screen and (max-width: 41.25em) {
+      .features__description {
+        font-size: 1.6rem; } }

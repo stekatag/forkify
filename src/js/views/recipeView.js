@@ -181,14 +181,14 @@ class RecipeView extends View {
       ${this._data.ingredients.map(this._generateMarkupIngredient).join("")}
 
       </ul>
-      <h5 class="recipe__note">Click on <span>&plus;</span>
+      <h4 class="recipe__note">Click on <span>&plus;</span>
               to add an ingredient to <a href= ${
                 window.location.pathname.includes("mealPlanner") ||
                 window.location.pathname.includes("mealplanner")
                   ? `./shoppingList.html`
                   : `./pages/shoppingList.html`
               }
-                  >your shopping list</a></h5>
+                  >your shopping list</a></h4>
     </div>
 
     <div class="recipe__directions">
@@ -270,10 +270,10 @@ class RecipeView extends View {
       </button>
       
     </form>
-      <h5 class="recipe__note">
+      <h4 class="recipe__note">
         Check your
         <a href="./pages/mealPlanner.html">weekly meal planner</a>
-      </h5>
+      </h4>
     </div>    
     `
     }
